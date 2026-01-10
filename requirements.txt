@@ -1,0 +1,22 @@
+# Core Dependencies
+aiohttp==3.9.5
+asyncio-throttle==1.0.2
+
+# Web Framework
+flask==3.0.3
+flask-cors==4.0.0
+
+# Environment & Configuration
+python-dotenv==1.0.1
+
+# UI & Terminal Display (for local CLI)
+rich==13.7.1
+
+# Additional Libraries
+pycryptodome==3.20.0
+protobuf==5.27.2
+urllib3==2.2.1
+psycopg[binary]==3.2.4
+
+# Production Server (for Render)
+gunicorn==21.2.0

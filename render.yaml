@@ -1,0 +1,32 @@
+# Render Blueprint Specification
+# This file tells Render how to deploy your app
+
+services:
+  - type: web
+    name: tsun-token-fetcher
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app --workers 2 --timeout 0
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.6"
+      - key: DATABASE_URL
+        sync: false  # You'll add this manually in dashboard
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_REPO_OWNER
+        sync: false
+      - key: GITHUB_REPO_NAME
+        sync: false
+      - key: GITHUB_BRANCH
+        value: main
+      - key: GITHUB_BASE_PATH
+        sync: false
+      - key: RUN_ENABLED
+        value: "true"
+      - key: RUN_SECRET_TOKEN
+        sync: false
+    healthCheckPath: /health
+    autoDeploy: true

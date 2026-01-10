@@ -1,0 +1,65 @@
+/* CSS Custom Properties - Cyberpunk Design System */
+:root {
+  /* Core Backgrounds */
+  --bg-core: #050505;
+  --bg-surface: #0f0f0f;
+  --bg-glass: rgba(20, 20, 20, 0.7);
+  
+  /* Accent Colors */
+  --primary: hsl(16, 100%, 50%); /* Fire orange #FF4500 */
+  --primary-glow: rgba(255, 69, 0, 0.3);
+  --accent-cyan: #00f2ff;
+  --accent-purple: #bd00ff;
+  
+  /* Status Colors */
+  --success: #00ff88;
+  --success-bg: rgba(0, 255, 136, 0.1);
+  --error: #ff3366;
+  --error-bg: rgba(255, 51, 102, 0.1);
+  --warning: #ffaa00;
+  --warning-bg: rgba(255, 170, 0, 0.1);
+  --info: #00ddff;
+  --info-bg: rgba(0, 221, 255, 0.1);
+  
+  /* Typography */
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+  --text-dim: #666666;
+  
+  /* Borders & Dividers */
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-glow: rgba(255, 69, 0, 0.5);
+  
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 4px 20px var(--primary-glow);
+  --shadow-glow-lg: 0 6px 30px rgba(255, 69, 0, 0.5);
+  
+  /* Transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition-fast: all 0.15s ease-out;
+  
+  /* Container */
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+  
+  /* Glassmorphism */
+  --glass-blur: blur(12px);
+  --glass-border: 1px solid var(--border-light);
+}
